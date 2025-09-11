@@ -8,9 +8,7 @@
     {
         public function run()
         {
-            ReportType::insert([
-                ['id' => 1, 'name' => 'Queimada'],
-                ['id' => 2, 'name' => 'Foco de lixo'],
-            ]);
+            ReportType::updateOrCreate(['id' => 1], ['name' => 'Queimada']);
+            ReportType::updateOrCreate(['id' => 2], ['name' => 'Foco de Lixo']);
         }
     }

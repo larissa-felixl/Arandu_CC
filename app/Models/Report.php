@@ -34,4 +34,5 @@
         {
             return $this->hasOne(FireLevel::class, 'report_id');
         }
+    
     }
