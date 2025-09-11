@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
 {
-    Schema::create('fire_level', function (Blueprint $table) {
+    Schema::create('fire_levels', function (Blueprint $table) {
         $table->id();
         $table->foreignId('reports_id')->constrained('reports');
         $table->integer('level');
@@ -18,6 +18,6 @@ return new class extends Migration
 
     public function down(): void
 {
-    Schema::dropIfExists('fire_level');
+    Schema::dropIfExists('fire_levels');
 }
 };
